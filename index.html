@@ -10,7 +10,7 @@
   <meta property="og:description" content="4.8/5 rated cafe and restaurant in Bole Bulbula offering dine-in, drive-through, and no-contact delivery. Open now until 11:00 PM.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="./assets/image-1.png">
   <link rel="canonical" href="https://example.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
   <header class="topbar">
     <div class="brand">Lomi Cafe &amp; Restaurant</div>
     <nav class="nav">
-      <a href="#menu">Menu</a>
+      <a href="menu.html">Menu</a>
       <a href="#contact">Contact</a>
       <a class="cta" href="tel:+251960555777">Call Now</a>
     </nav>
@@ -36,17 +36,17 @@
         <div class="hero-actions">
           <a class="btn primary" href="tel:+251960555777">Call Now</a>
           <a class="btn ghost" href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noreferrer">Get Directions</a>
-          <a class="btn link" href="#menu">View Menu</a>
+          <a class="btn link" href="menu.html">View Menu</a>
         </div>
         <div class="status">Open now · Closes at 11:00 PM</div>
       </div>
       <div class="hero-media">
         <div class="media-card">
-          <img src="./assets/image-2.png" alt="Signature dish" loading="lazy">
+          <img src="./assets/image-1.png" data-fallback="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Exterior of Lomi Cafe &amp; Restaurant" loading="lazy">
           <div class="media-note">Chef's selection</div>
         </div>
         <div class="media-card small">
-          <img src="./assets/image-5.png" alt="Cafe interior" loading="lazy">
+          <img src="./assets/image-5.png" data-fallback="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Cafe interior seating area" loading="lazy">
           <div class="media-note">Cozy seating</div>
         </div>
       </div>
@@ -69,10 +69,22 @@
         </div>
         <div>
           <h3>Hours</h3>
-          <ul>
+          <ul class="hours-list">
             <li><span class="badge success">Open now</span> Closes at 11:00 PM</li>
             <li>Dine-in · Drive-through · No-contact delivery</li>
           </ul>
+          <details class="hours-details">
+            <summary>See full hours</summary>
+            <div class="hours-grid" aria-label="Weekly opening hours">
+              <div class="hours-row"><span>Sunday</span><span>7:00 AM – 11:30 PM</span></div>
+              <div class="hours-row"><span>Monday</span><span>7:00 AM – 11:00 PM</span></div>
+              <div class="hours-row"><span>Tuesday</span><span>7:00 AM – 11:00 PM</span></div>
+              <div class="hours-row"><span>Wednesday</span><span>7:00 AM – 11:00 PM</span></div>
+              <div class="hours-row"><span>Thursday</span><span>7:00 AM – 11:00 PM</span></div>
+              <div class="hours-row"><span>Friday</span><span>7:00 AM – 11:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>7:00 AM – 11:00 PM</span></div>
+            </div>
+          </details>
         </div>
         <div>
           <h3>Contact</h3>
@@ -86,59 +98,65 @@
 
     <section class="menu" id="menu">
       <div class="section-heading">
-        <p class="eyebrow">Menu Highlights</p>
-        <h2>Fresh, vibrant, and satisfying.</h2>
-        <p class="lede">Browse favorites across breakfast, mains, desserts, and drinks. Ask our team for daily specials.</p>
+        <p class="eyebrow">Lomi Burger</p>
+        <h2>Our menu, ready to order.</h2>
+        <p class="lede">Burgers, pizzas, and snacks with prices in ETB. Dine-in, takeaway, or no-contact delivery.</p>
       </div>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <img src="./assets/Screenshot 2026-01-28 145938.png" alt="Breakfast spread" loading="lazy">
-          <div class="menu-content">
-            <h3>Breakfast</h3>
-            <ul>
-              <li><span>Avocado toast</span><span class="price">180 ETB</span></li>
-              <li><span>Spiced omelette</span><span class="price">160 ETB</span></li>
-              <li><span>Honey granola bowl</span><span class="price">150 ETB</span></li>
-            </ul>
+      <div class="menu-columns">
+        <article class="menu-column">
+          <div class="menu-column__media">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" data-fallback="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Stacked burger with cheese and lettuce" loading="lazy">
           </div>
+          <h3>በርገር / Burgers &amp; Sandwiches</h3>
+          <ul class="menu-list">
+            <li><span>Lomi special Burger</span><span class="price">300</span></li>
+            <li><span>Normal Burger</span><span class="price">250</span></li>
+            <li><span>Cheese Burger</span><span class="price">280</span></li>
+            <li><span>Beef Burger</span><span class="price">280</span></li>
+            <li><span>Tuna Sandwich</span><span class="price">250</span></li>
+            <li><span>Chicken Sandwich</span><span class="price">250</span></li>
+            <li><span>Fish Sandwich</span><span class="price">280</span></li>
+            <li><span>French fries</span><span class="price">100</span></li>
+            <li><span>Fish and Chips</span><span class="price">200</span></li>
+          </ul>
         </article>
-        <article class="menu-card">
-          <img src="./assets/Screenshot 2026-01-28 145938.png" alt="Signature mains" loading="lazy">
-          <div class="menu-content">
-            <h3>Mains</h3>
-            <ul>
-              <li><span>Berbere grilled chicken</span><span class="price">260 ETB</span></li>
-              <li><span>Herb butter steak</span><span class="price">340 ETB</span></li>
-              <li><span>Seasonal veggie platter</span><span class="price">210 ETB</span></li>
-            </ul>
+
+        <article class="menu-column">
+          <div class="menu-column__media">
+            <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=900&q=80" data-fallback="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=900&q=80" alt="Cheesy pizza fresh from the oven" loading="lazy">
           </div>
+          <h3>ፒዛ / Pizza</h3>
+          <ul class="menu-list">
+            <li><span>Tuna Pizza L</span><span class="price">350</span></li>
+            <li><span>Tuna Pizza M</span><span class="price">300</span></li>
+            <li><span>Beef Pizza L</span><span class="price">350</span></li>
+            <li><span>Beef Pizza M</span><span class="price">300</span></li>
+            <li><span>Chicken Pizza L</span><span class="price">350</span></li>
+            <li><span>Chicken Pizza M</span><span class="price">300</span></li>
+            <li><span>Veg. Pizza L</span><span class="price">300</span></li>
+            <li><span>Veg. Pizza M</span><span class="price">200</span></li>
+            <li><span>Cheese Pizza L</span><span class="price">300</span></li>
+            <li><span>Cheese Pizza M</span><span class="price">250</span></li>
+            <li><span>Lomi special Pizza L</span><span class="price">380</span></li>
+          </ul>
         </article>
-        <article class="menu-card">
-          <img src="./assets/Screenshot 2026-01-28 145938.png" alt="Desserts" loading="lazy">
-          <div class="menu-content">
-            <h3>Desserts</h3>
-            <ul>
-              <li><span>Layered tiramisu</span><span class="price">180 ETB</span></li>
-              <li><span>Warm chocolate cake</span><span class="price">190 ETB</span></li>
-              <li><span>Citrus tart</span><span class="price">170 ETB</span></li>
-            </ul>
+
+        <article class="menu-column">
+          <div class="menu-column__media">
+            <img src="https://images.unsplash.com/photo-1550547660-26160f608093?auto=format&fit=crop&w=900&q=80" data-fallback="https://images.unsplash.com/photo-1550547660-26160f608093?auto=format&fit=crop&w=900&q=80" alt="Crispy chicken wings and fries" loading="lazy">
           </div>
-        </article>
-        <article class="menu-card">
-          <img src="./assets/Screenshot 2026-01-28 145938.png" alt="Drinks" loading="lazy">
-          <div class="menu-content">
-            <h3>Drinks</h3>
-            <ul>
-              <li><span>Single-origin coffee</span><span class="price">90 ETB</span></li>
-              <li><span>Cold brew tonic</span><span class="price">110 ETB</span></li>
-              <li><span>Hibiscus cooler</span><span class="price">120 ETB</span></li>
-            </ul>
-          </div>
+          <h3>እስናክ / Snacks</h3>
+          <ul class="menu-list">
+            <li><span>Chicken wing 6 pc</span><span class="price">250</span></li>
+            <li><span>Chicken wing 12 pc</span><span class="price">400</span></li>
+            <li><span>Meat Barbeque</span><span class="price">200</span></li>
+            <li><span>Meat Barbeque</span><span class="price">300</span></li>
+          </ul>
         </article>
       </div>
       <div class="menu-cta">
         <a class="btn primary" href="tel:+251960555777">Order by phone</a>
-        <a class="btn ghost" href="#contact">Ask about today’s specials</a>
+        <a class="btn ghost" href="menu.html">View full menu page</a>
       </div>
     </section>
 
@@ -187,19 +205,58 @@
           <span>4.8 / 5 · 492 reviews</span>
         </div>
       </div>
-      <div class="testimonial-grid">
-        <article class="testimonial">
-          <p>“Warm service and beautifully plated dishes. The coffee is outstanding.”</p>
-          <div class="meta">— Frequent guest</div>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-header">
+            <div>
+              <h3>Assyla Hussein</h3>
+              <p class="review-meta">Local Guide · 5 stars</p>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+            </div>
+          </div>
+          <p>“Such a nice experience, great traditional food.”</p>
         </article>
-        <article class="testimonial">
-          <p>“Drive-through is quick and reliable. Food arrives hot every time.”</p>
-          <div class="meta">— Busy commuter</div>
+        <article class="review-card">
+          <div class="review-header">
+            <div>
+              <h3>Mahesh</h3>
+              <p class="review-meta">4 reviews · 5 stars</p>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+            </div>
+          </div>
+          <p>“Loved the food; spices and oil stay balanced.”</p>
         </article>
-        <article class="testimonial">
-          <p>“No-contact delivery was seamless. Packaging was secure and clean.”</p>
-          <div class="meta">— Delivery customer</div>
+        <article class="review-card">
+          <div class="review-header">
+            <div>
+              <h3>Abdurezak Abdulkadir Dube</h3>
+              <p class="review-meta">4 reviews · 5 stars</p>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 .8l2.7 7.6h7.9l-6.4 4.7 2.7 7.6-6.9-4.9-6.9 4.9 2.7-7.6L.4 8.4h7.9z"></path></svg>
+            </div>
+          </div>
+          <p>“Perfect for any guest. Hot, fast food and coffee.”</p>
         </article>
+      </div>
+      <div class="review-cta">
+        <a class="btn ghost" href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noreferrer">See more reviews</a>
       </div>
     </section>
 
@@ -224,7 +281,7 @@
           </div>
         </div>
         <div class="map-card">
-          <iframe title="Lomi Cafe &amp; Restaurant location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69"></iframe>
+          <iframe title="Lomi Cafe &amp; Restaurant location" class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-map-place="XQ4Q+W2 Addis Ababa" data-map-key="" data-map-fallback="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69"></iframe>
         </div>
       </div>
     </section>
@@ -235,7 +292,7 @@
     <div class="footer-links">
       <a href="tel:+251960555777">Call</a>
       <a href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noopener">Directions</a>
-      <a href="#menu">Menu</a>
+      <a href="menu.html">Menu</a>
     </div>
     <div class="social">
       <a href="#" aria-label="Instagram">Instagram</a>
