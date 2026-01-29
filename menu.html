@@ -14,68 +14,72 @@
   <header class="topbar">
     <div class="brand">Lomi Cafe &amp; Restaurant</div>
     <nav class="nav">
-      <a href="index.html#home">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="index.html#contact">Contact</a>
-      <a class="cta" href="tel:+251960555777">Call Now</a>
+      <a href="index.html#home" data-i18n="nav.home">Home</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+      <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      <a class="cta" href="tel:+251960555777" data-i18n="nav.call">Call Now</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selection">
+      <button type="button" class="lang-btn active" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="am">አማርኛ</button>
+    </div>
   </header>
 
   <main>
     <section class="menu-page-hero" id="menu-top">
       <div class="menu-page-hero__content">
-        <p class="eyebrow">Lomi Burger Menus</p>
-        <h1>Fresh off the grill, baked, and fried daily.</h1>
-        <p class="lede">Full menu with prices for burgers, pizzas, and snacks. Available for dine-in, takeaway, and no-contact delivery.</p>
+        <p class="eyebrow" data-i18n="menuPage.eyebrow">Lomi Burger Menus</p>
+        <h1 data-i18n="menuPage.title">Fresh off the grill, baked, and fried daily.</h1>
+        <p class="lede" data-i18n="menuPage.lede">Full menu with prices for burgers, pizzas, and snacks. Available for dine-in, takeaway, and no-contact delivery.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="tel:+251960555777">Order by phone</a>
-          <a class="btn ghost" href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noreferrer">Get directions</a>
+          <a class="btn primary" href="tel:+251960555777" data-i18n="menuPage.order">Order by phone</a>
+          <a class="btn ghost" href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noreferrer" data-i18n="menuPage.directions">Get directions</a>
         </div>
-        <div class="status">All prices in ETB · Served hot and fast</div>
+        <div class="status" data-i18n="menuPage.status">All prices in ETB · Served hot and fast</div>
       </div>
       <div class="menu-page-hero__media">
         <div class="media-card">
           <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80" data-fallback="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80" alt="Stacked burgers with cheese and lettuce" loading="lazy">
-          <div class="media-note">Signature burgers</div>
+          <div class="media-note" data-i18n="menuPage.mediaNote">Signature burgers</div>
         </div>
       </div>
     </section>
 
     <section class="menu-tabs" aria-label="Menu sections">
-      <a class="menu-tab" href="#burgers">በርገር / Burgers</a>
-      <a class="menu-tab" href="#pizzas">ፒዛ / Pizzas</a>
-      <a class="menu-tab" href="#snacks">እስናክ / Snacks</a>
+      <a class="menu-tab" href="#burgers" data-i18n="menuPage.tab.burgers">በርገር / Burgers</a>
+      <a class="menu-tab" href="#pizzas" data-i18n="menuPage.tab.pizzas">ፒዛ / Pizzas</a>
+      <a class="menu-tab" href="#snacks" data-i18n="menuPage.tab.snacks">እስናክ / Snacks</a>
     </section>
 
     <section class="menu-section" id="burgers">
       <div class="menu-section-heading">
-        <p class="eyebrow">በርገር / Burger</p>
-        <h2>Burgers &amp; Sandwiches</h2>
-        <p class="lede">Grilled patties, toasty buns, crisp greens, and house sauces. Ask for extra cheese or double patty.</p>
+        <p class="eyebrow" data-i18n="menuPage.burgers.eyebrow">በርገር / Burger</p>
+        <h2 data-i18n="menuPage.burgers.title">Burgers &amp; Sandwiches</h2>
+        <p class="lede" data-i18n="menuPage.burgers.lede">Grilled patties, toasty buns, crisp greens, and house sauces. Ask for extra cheese or double patty.</p>
       </div>
       <div class="menu-section-grid">
         <div class="menu-photo">
           <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" data-fallback="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Juicy burger with fries" loading="lazy">
         </div>
         <div class="menu-items" aria-label="Burger menu">
-          <div class="menu-item"><span class="menu-item__name">Lomi special Burger</span><span class="menu-item__price">300</span></div>
-          <div class="menu-item"><span class="menu-item__name">Normal Burger</span><span class="menu-item__price">250</span></div>
-          <div class="menu-item"><span class="menu-item__name">Cheese Burger</span><span class="menu-item__price">280</span></div>
-          <div class="menu-item"><span class="menu-item__name">Beef Burger</span><span class="menu-item__price">280</span></div>
-          <div class="menu-item"><span class="menu-item__name">Tuna Sandwich</span><span class="menu-item__price">250</span></div>
-          <div class="menu-item"><span class="menu-item__name">Chicken Sandwich</span><span class="menu-item__price">250</span></div>
-          <div class="menu-item"><span class="menu-item__name">Fish Sandwich</span><span class="menu-item__price">280</span></div>
-          <div class="menu-item"><span class="menu-item__name">French fries</span><span class="menu-item__price">100</span></div>
-          <div class="menu-item"><span class="menu-item__name">Fish and Chips</span><span class="menu-item__price">200</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.special">Lomi special Burger</span><span class="menu-item__price">300</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.normal">Normal Burger</span><span class="menu-item__price">250</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.cheese">Cheese Burger</span><span class="menu-item__price">280</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.beef">Beef Burger</span><span class="menu-item__price">280</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.tunaSandwich">Tuna Sandwich</span><span class="menu-item__price">250</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.chickenSandwich">Chicken Sandwich</span><span class="menu-item__price">250</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.fishSandwich">Fish Sandwich</span><span class="menu-item__price">280</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.fries">French fries</span><span class="menu-item__price">100</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.burger.fishChips">Fish and Chips</span><span class="menu-item__price">200</span></div>
         </div>
       </div>
     </section>
 
     <section class="menu-section" id="pizzas">
       <div class="menu-section-heading">
-        <p class="eyebrow">ፒዛ / Pizza</p>
-        <h2>Wood-fired style pizzas</h2>
-        <p class="lede">Hand-stretched bases, sauced with ripe tomatoes, baked with golden cheese. Choose large (L) or medium (M).</p>
+        <p class="eyebrow" data-i18n="menuPage.pizzas.eyebrow">ፒዛ / Pizza</p>
+        <h2 data-i18n="menuPage.pizzas.title">Wood-fired style pizzas</h2>
+        <p class="lede" data-i18n="menuPage.pizzas.lede">Hand-stretched bases, sauced with ripe tomatoes, baked with golden cheese. Choose large (L) or medium (M).</p>
       </div>
       <div class="menu-section-grid">
         <div class="menu-photo">
@@ -83,39 +87,39 @@
         </div>
         <div class="menu-items" aria-label="Pizza menu">
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Tuna Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.tunaL">Tuna Pizza L</div>
             <div class="menu-item__price">350</div>
-            <p class="menu-item__desc">Tomato sauce, cheese, tuna, onion, chili, tomato, avocado.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.tunaL.desc">Tomato sauce, cheese, tuna, onion, chili, tomato, avocado.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Tuna Pizza M</span><span class="menu-item__price">300</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.pizza.tunaM">Tuna Pizza M</span><span class="menu-item__price">300</span></div>
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Beef Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.beefL">Beef Pizza L</div>
             <div class="menu-item__price">350</div>
-            <p class="menu-item__desc">Tomato sauce, cheese, onion, chili, tomato, olive, mushroom.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.beefL.desc">Tomato sauce, cheese, onion, chili, tomato, olive, mushroom.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Beef Pizza M</span><span class="menu-item__price">300</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.pizza.beefM">Beef Pizza M</span><span class="menu-item__price">300</span></div>
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Chicken Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.chickenL">Chicken Pizza L</div>
             <div class="menu-item__price">350</div>
-            <p class="menu-item__desc">Tomato sauce, cheese, chicken, onion, chilies, olive, mushroom.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.chickenL.desc">Tomato sauce, cheese, chicken, onion, chilies, olive, mushroom.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Chicken Pizza M</span><span class="menu-item__price">300</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.pizza.chickenM">Chicken Pizza M</span><span class="menu-item__price">300</span></div>
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Veg. Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.vegL">Veg. Pizza L</div>
             <div class="menu-item__price">300</div>
-            <p class="menu-item__desc">Tomato sauce, cabbage, carrot, zucchini, spinach, beans, onion, tomato, chilies.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.vegL.desc">Tomato sauce, cabbage, carrot, zucchini, spinach, beans, onion, tomato, chilies.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Veg. Pizza M</span><span class="menu-item__price">200</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.pizza.vegM">Veg. Pizza M</span><span class="menu-item__price">200</span></div>
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Cheese Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.cheeseL">Cheese Pizza L</div>
             <div class="menu-item__price">300</div>
-            <p class="menu-item__desc">Tomato sauce, cheese, olive, onion, chilies.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.cheeseL.desc">Tomato sauce, cheese, olive, onion, chilies.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Cheese Pizza M</span><span class="menu-item__price">250</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.pizza.cheeseM">Cheese Pizza M</span><span class="menu-item__price">250</span></div>
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Lomi special Pizza L</div>
+            <div class="menu-item__name" data-i18n="menu.pizza.lomiL">Lomi special Pizza L</div>
             <div class="menu-item__price">380</div>
-            <p class="menu-item__desc">Tomato sauce, cheese, chicken, beef, boiled egg, beef sausage, olive, onion, chilies, mushroom.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.pizza.lomiL.desc">Tomato sauce, cheese, chicken, beef, boiled egg, beef sausage, olive, onion, chilies, mushroom.</p>
           </div>
         </div>
       </div>
@@ -123,9 +127,9 @@
 
     <section class="menu-section" id="snacks">
       <div class="menu-section-heading">
-        <p class="eyebrow">እስናክ / Snack</p>
-        <h2>Snacks &amp; Barbeque</h2>
-        <p class="lede">Shareable favorites fried, grilled, and sauced to order.</p>
+        <p class="eyebrow" data-i18n="menuPage.snacks.eyebrow">እስናክ / Snack</p>
+        <h2 data-i18n="menuPage.snacks.title">Snacks &amp; Barbeque</h2>
+        <p class="lede" data-i18n="menuPage.snacks.lede">Shareable favorites fried, grilled, and sauced to order.</p>
       </div>
       <div class="menu-section-grid">
         <div class="menu-photo">
@@ -133,24 +137,24 @@
         </div>
         <div class="menu-items" aria-label="Snack menu">
           <div class="menu-item menu-item--stacked">
-            <div class="menu-item__name">Chicken wing</div>
+            <div class="menu-item__name" data-i18n="menu.snack.wing6">Chicken wing</div>
             <div class="menu-item__price">6 pc · 250</div>
-            <p class="menu-item__desc">Crispy, tossed in house spice blend.</p>
+            <p class="menu-item__desc" data-i18n="menuPage.snack.wing.desc">Crispy, tossed in house spice blend.</p>
           </div>
-          <div class="menu-item"><span class="menu-item__name">Chicken wing</span><span class="menu-item__price">12 pc · 400</span></div>
-          <div class="menu-item"><span class="menu-item__name">Meat Barbeque</span><span class="menu-item__price">200</span></div>
-          <div class="menu-item"><span class="menu-item__name">Meat Barbeque</span><span class="menu-item__price">300</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.snack.wing12">Chicken wing</span><span class="menu-item__price">12 pc · 400</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.snack.meat200">Meat Barbeque</span><span class="menu-item__price">200</span></div>
+          <div class="menu-item"><span class="menu-item__name" data-i18n="menu.snack.meat300">Meat Barbeque</span><span class="menu-item__price">300</span></div>
         </div>
       </div>
     </section>
 
     <section class="menu-cta-block">
       <div class="menu-cta-card">
-        <h3>Ready to order?</h3>
-        <p>Call now for pickup or ask our team about today’s specials.</p>
+        <h3 data-i18n="menuPage.cta.title">Ready to order?</h3>
+        <p data-i18n="menuPage.cta.body">Call now for pickup or ask our team about today’s specials.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="tel:+251960555777">Call +251 96 055 5777</a>
-          <a class="btn ghost" href="index.html#contact">Message or visit</a>
+          <a class="btn primary" href="tel:+251960555777" data-i18n="menuPage.cta.call">Call +251 96 055 5777</a>
+          <a class="btn ghost" href="index.html#contact" data-i18n="menuPage.cta.visit">Message or visit</a>
         </div>
       </div>
     </section>
@@ -159,16 +163,16 @@
   <footer class="footer">
     <div class="footer-brand">Lomi Cafe &amp; Restaurant</div>
     <div class="footer-links">
-      <a href="tel:+251960555777">Call</a>
-      <a href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noopener">Directions</a>
-      <a href="menu.html">Menu</a>
+      <a href="tel:+251960555777" data-i18n="footer.call">Call</a>
+      <a href="https://maps.app.goo.gl/uXEMAdL3QRDSRMn69" target="_blank" rel="noopener" data-i18n="footer.directions">Directions</a>
+      <a href="menu.html" data-i18n="footer.menu">Menu</a>
     </div>
     <div class="social">
       <a href="#" aria-label="Instagram">Instagram</a>
       <a href="#" aria-label="Facebook">Facebook</a>
       <a href="#" aria-label="Twitter">Twitter</a>
     </div>
-    <p class="copyright">© 2026 Lomi Cafe &amp; Restaurant. All rights reserved.</p>
+    <p class="copyright" data-i18n="footer.copy">© 2026 Lomi Cafe &amp; Restaurant. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
